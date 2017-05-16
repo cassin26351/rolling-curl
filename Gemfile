@@ -1,14 +1,10 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
-
-# Specify your gem's dependencies in ach_builder.gemspec
-gem 'i18n'
-gemspec
-
-group :development, :test do
-  gem 'rspec'
-  gem 'yard'
-
-  gem "simplecov"          , :require => false
-  gem 'simplecov-rcov-text', :require => false
-end
+gem "rails", "3.0.5"
+gem "capybara", ">= 0.4.0"
+gem "sqlite3"
+gem "rspec", '2.2.0'
+gem "rspec-rails", '2.2.1'
+gem 'resque', :require => 'resque/server'
+gem 'resque_spec'
+gem 'sourcify'
